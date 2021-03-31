@@ -11,6 +11,8 @@ Valid examples:
 4. 20-33817701-3
 ```javascript
 function processDni(value) {
+    const ALLOWED_TYPES_REGEX = /^(20|23|24|27|30|33|34)\d{9}$/;
+    
     function format(n) {
         return n.replaceAll(/\D/g, '');
     }
@@ -57,10 +59,10 @@ function processDni(value) {
     }
 
     value = format(value);
-    
+
     return {
         dni: extractRawDni(value),
-        valid: /^(20|23|24|27|30|33|34)\d{9}$/.test(value) && validateCheckDigit(value)
+        valid: ALLOWED_TYPES_REGEX.test(value) && validateCheckDigit(value)
     }
 }
 ```

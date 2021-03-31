@@ -64,4 +64,4 @@ function processDni(value) {
     }
 }
 ```
-P.S. The code can be improved and simplified for sure. Sorry guys, I am not a JS developer :shipit:
+*P.S. The code can be improved and simplified for sure. ~~Sorry guys, I am not a JS developer :shipit:~~*

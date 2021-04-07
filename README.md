@@ -7,8 +7,6 @@ Inspired by
 Valid examples: 
 1. 30-71492781-3
 2. 30-70843653-0
-3. 20-33817701-2
-4. 20-33817701-3
 ```javascript
 function processDni(value) {
     const ALLOWED_TYPES_REGEX = /^(20|23|24|27|30|33|34)\d{9}$/;
